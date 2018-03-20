@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('LoadJenkinsfile') {
             steps {
-       //   def workspace = pwd()
+        workspace = pwd()
    //             node {
  // withEnv(["WORKSPACE=${pwd()}"]) {
     // 
