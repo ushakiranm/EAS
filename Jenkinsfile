@@ -4,9 +4,9 @@ pipeline {
         stage('LoadJenkinsFile') {
             steps {
                
-               def workspace = pwd()
+              // def workspace = pwd()
                println "current workspace : ${workspace}"
-              // new File(workspace+"/projects/Veridic_NewJersey").list().each {
+              new File(workspace+"/projects/Veridic_NewJersey").list().each {
                if( it.contains("Jenkinsfile")){
                     def jFilepath = workspace+"/projects/Veridic_NewJersey/" + it;
                     println jFilepath
