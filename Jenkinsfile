@@ -1,8 +1,8 @@
 pipeline {
     agent any
     stages {
-        stage('LoadJenkinsfile') {
-           // steps {
+        stage 'LoadJenkinsfile' {
+           steps {
                 def  workspace = pwd()
    //             node {
  // withEnv(["WORKSPACE=${pwd()}"]) {
