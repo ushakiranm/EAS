@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage 'LoadJenkinsfile' {
+        stage 'LoadJenkinsfile' 
            steps {
                 def  workspace = pwd()
    //             node {
@@ -20,6 +20,6 @@ pipeline {
                           
      //       }
        }
-    }
+    
 }
     }
